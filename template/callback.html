@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY WEBSITE</title>
+    <link rel="icon" href="{% static 'images/sheriyan.webp' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/courses.css' %}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://img.icons8.com/emoji/48/nerd-face.png" alt="Logo">
+            Sheryians Coding School
+        </div>
+
+        <ul class="nav-links">
+            <li><a class="nav-link" href="{% url 'webpage:home' %}" >Home</a></li>
+            <li><a class="nav-link active" href="{% url 'webpage:courses' %}" active>Courses</a></li>
+            <li><a class="nav-link" href="{% url 'webpage:bootcamp' %}">Bootcamp(Kodr)</a></li>
+            <li><a class="nav-link" href="{% url 'webpage:callback' %}">Request Callback</a></li>
+        </ul>
+    </nav>
+    <h1>callback</h1>
+</body>
+</html>

@@ -1,0 +1,125 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY WEBSITE</title>
+    <link rel="icon" href="{% static 'images/sheriyan.webp' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <style>
+        #main{
+            padding-left: 350px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="{% static 'images/sheriyan.webp' %}" alt="Logo">
+            Sheryians Coding School
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="{% url 'webpage:home' %}">Home</a></li>
+            <li><a href="{% url 'webpage:courses' %}">Courses</a></li>
+            <li><a href="{% url 'webpage:bootcamp' %}">Bootcamp(Kodr)</a></li>
+            <li><a href="{% url 'webpage:callback' %}">Request Callback</a></li>
+        </ul>
+
+        <a href="{% url 'webpage:login' %}" class="signin-btn">Sign In</a>
+    </nav>
+    <pre>
+        We Only <span id="span1" style="color: rgb(36,207,166);">Teach</span>
+        What We Are Really
+        Really Good At
+    </pre>
+    <button id="button1" style=" background-color: rgb(36,207,166);">Check Course Make An Impact</button><br><br><br>
+
+    <div id="Students">
+        <div class="pre" id="pre"><b>   25K+
+            Students</b>
+        </div>
+        <div></div>
+        <div class="pre" class="pre1"><b>20+
+            instructors</b>
+        </div>
+        <div class="pre" class="pre1">
+            <b>
+            431K+
+            youtube subs</b>
+        </div>
+    </div>
+    <br>
+    <pre>
+        We do whatever it takes to help you
+        <span style="color: rgb(36,207,166);">understand the concept</span>
+    </pre>
+    <iframe id="main" width="900" height="450" src="https://www.youtube.com/embed/60SRAWmMXyc?si=CcE_iVP0tcZnxofX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br>
+    <button id="main1" style="margin-left: 430px;width: 300px;height: 60px;background-color: rgba(36, 207, 166, 255);border-radius: 18px;">Explore Free Learning</button>
+    <h1 style="color: white;margin-left: 50px;width: 50px;"><b>Courses Offered </b></h1><br><br><br><br>
+    <a href="{% url 'webpage:frontendDomination' %}"><div class="boxes" id="box1" style="width: 300px;height: 300px;background-color: rgb(72, 75, 75);float: left;margin-left: 10px;"><img style="width: 300px;height: 150px;"  src="https://ik.imagekit.io/sheryians/courses_gif/Front-End_Domination__Create_Anything_with_Code-FRONTENDTHUBNAIL_Wf8WqcNJx.jpg" alt=""><p style="color: white;">FRONT-END DOMINATION:Create Anything With Code</p><h4 style="background-color: gray;color: white;width: fit-content;">Hindi</h4><br><br><span style="color: rgb(36,207,166);;width: fit-content;">Limited Time Discount</span><p style="color: red;">₹ 4999       <strike>₹9999</strike><p style="background-color: white;color: black;width: fit-content;">50% OFF</p></p><BUtton class="boxe_button" style="margin-top: 5px;margin-left: 1px;width: 300px;height: 40px;background-color:rgb(36,207,166);">View Dertails</BUtton></div></a>
+    <a href="{% url 'webpage:backendDomination' %}"><div class="boxes" id="box2" style="width: 300px;height: 300px;background-color: rgb(81, 84, 84);float: left;margin-left: 10px;"><img style="width: 300px;height: 150px;" src="https://ik.imagekit.io/sheryians/courses_gif/undefined-backend_0.5x_Medium_wgHDU-5rPt.png" alt=""><p style="color: white;">Back-End Domination:Create Efficient Back-End</p><h4 style="background-color: gray;color: white;width: fit-content;">Hindi</h4><br><br><span style="color: rgb(36,207,166);;width: fit-content;">Limited Time Discount</span><p style="color: red;">₹ 5999       <strike>₹11999</strike><p style="background-color: white;color: black;width: fit-content;">50% OFF</p></p><BUtton class="boxe_button" style="margin-top: 5px;margin-left: 1px;width: 300px;height: 40px;background-color:rgb(36,207,166);">View Dertails</BUtton></div></a>
+    <a href="{% url 'webpage:aptitude' %}"><div class="boxes" id="box3" style="width: 300px;height: 300px;background-color: rgb(61, 62, 62);float: left;margin-left: 10px;"><img style="width: 300px;height: 150px;" src="https://ik.imagekit.io/sheryians/courses_gif/undefined-apti_reasoning_45vyAnZ4y.jpeg" alt=""><p style="color: white;">Aptitude & Reasoning for Campus Placements</p><h4 style="background-color: gray;color: white;width: fit-content;">HINGLISH</h4><br><br><span style="color: rgb(36,207,166);;width: fit-content;">Black Friday Sale</span><p style="color: red;">₹ 999       <strike>₹1599</strike><p style="background-color: white;color: black;width: fit-content;">33% OFF</p></p><BUtton class="boxe_button" style="margin-top: 5px;margin-left: 1px;width: 300px;height: 40px;background-color:rgb(36,207,166);">View Dertails</BUtton></div></a>
+    <a href="{% url 'webpage:DSA' %}"><div class="boxes" id="box4" style="width: 300px;height: 300px;background-color: rgb(48, 49, 49);float: left;margin-left: 10px;"><img style="width: 300px;height: 150px;" src="https://ik.imagekit.io/sheryians/courses_gif/undefined-javaas_Large_jY0Wighav__6PygWBZQ.jpeg" alt=""><p style="color: white;">Java & DSA Domination</p><h4 style="background-color: gray;color: white;width: fit-content;">HINGLISH</h4><br><br><br><span style="color: rgb(36,207,166);;width: fit-content;">Limited Time Discount</span><p style="color: red;">₹ 4999       <strike>₹9999</strike><p style="background-color: white;color: black;width: fit-content;">50% OFF</p></p><BUtton class="boxe_button" style="margin-top: 5px;margin-left: 1px;width: 300px;height: 40px;background-color:rgb(36,207,166);">View Dertails</BUtton></div></a>
+    <div style="width: 1200px;height: 400px;"></div><br><br><br><br><br><br><br><img src="" alt="">
+    
+    <pre style="margin-left: 200px;">Top <span style="color:rgb(36,207,166);">companies</span> our students
+working with</pre>
+        <div class="companies">
+             <img style="width: 700px;height: 300px;margin-left: 300px;" src="{% static 'images/mindtree.webp' %}" alt="Mindtree">
+        </div>
+        <a href="{% url 'webpage:courses' %}" style="cursor: grabbing;"><button style="margin-left: 500px;background-color:rgb(36,207,166);width: 250px;height: 60px;border-radius: 18px;">Explore Courses</button></a>
+
+    </div>
+    <footer style="background-color: black; color: white; padding: 20px 10%; font-family: Arial, sans-serif;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+            <div>
+                <img src="{% static 'images/sheriyan.webp' %}" alt="Logo" style="width: 80px; height: auto;">
+                <p>Let's connect with our socials</p>
+                <div>
+                    <a href="#" style="margin-right: 10px;"><img src="{% static 'images/insta.png' %}" alt="Instagram" style="width: 24px;"></a>
+                    <a href="#" style="margin-right: 10px;"><img src="{% static 'images/linkedln.png' %}" alt="LinkedIn" style="width: 24px;"></a>
+                    <a href="#" style="margin-right: 10px;"><img src="{% static 'images/discord.png' %}" alt="Discord" style="width: 24px;"></a>
+                    <a href="#" style="margin-right: 10px;"><img src="{% static 'images/youtube.png' %}" alt="YouTube" style="width: 24px;"></a>
+                    <a href="#"><img src="{% static 'images/twitter.png' %}" alt="Twitter" style="width: 24px;"></a>
+                </div>
+            </div>
+    
+            <div>
+                <h4 style="font-weight: bold;">COMPANY</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="#" style="color: white; text-decoration: none;">About Us</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Support</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Privacy Policy</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Terms and Condition</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Pricing and Refund</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Hire From Us</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Bug Bounty</a></li>
+                </ul>
+            </div>
+    
+            <div>
+                <h4 style="font-weight: bold;">COMMUNITY</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="#" style="color: white; text-decoration: none;">Inertia</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Discord</a></li>
+                </ul>
+            </div>
+    
+            <div>
+                <h4 style="font-weight: bold;">Get In Touch</h4>
+                <p style="margin: 0;">+91 8109161752</p>
+                <p style="margin: 0;">+91 9691778470</p>
+                <p style="margin: 0;"><a href="mailto:hello@sheryians.com" style="color: white; text-decoration: none;">hello@sheryians.com</a></p>
+                <p style="margin: 0;">23-B, Indrapuri Sector C,<br>Bhopal(MP), 462021</p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 20px; border-top: 1px solid gray; padding-top: 10px;">
+            <p style="margin: 0; font-size: 14px;">Copyright © 2024 Sheryians Pvt. Ltd.<br>All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY WEBSITE</title>
+    <link rel="icon" href="{% static 'images/sheriyan.webp' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://img.icons8.com/emoji/48/nerd-face.png" alt="Logo">
+            Sheryians Coding School
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="{% url 'webpage:home' %}">Home</a></li>
+            <li><a href="{% url 'webpage:courses' %}">Courses</a></li>
+            <li><a href="{% url 'webpage:bootcamp' %}">Bootcamp(Kodr)</a></li>
+            <li><a href="{% url 'webpage:callback' %}">Request Callback</a></li>
+        </ul>
+
+        <a href="{% url 'webpage:login' %}" class="signin-btn">Sign In</a>
+    </nav>
+    <h1 id="heading">Welcome TO Sheryians Coding School </h1>
+
+    <div id="divi1">
+        <div id="divi2">
+            <h1>Sign In</h1><br>
+            <input type="text" placeholder="Enter UserName" id="username"><br><br>
+            <input type="password" id="password" placeholder="Enter Password" oninput="validation()"><br><br>
+            <button id="button">Submit</button>
+        </div>
+    </div>
+    <footer style="background-color: black; color: white; padding: 20px 10%; font-family: Arial, sans-serif;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+            <div>
+                <img src="logo.png" alt="Logo" style="width: 80px; height: auto;">
+                <p>Let's connect with our socials</p>
+                <div>
+                    <a href="#" style="margin-right: 10px;"><img src="{% static 'images/insta.png' %}" alt="Instagram" style="width: 24px;"></a>
+                    <a href="#" style="margin-right: 10px;"><img src="-{% static 'images/Linkedln.png' %}" alt="LinkedIn" style="width: 24px;"></a>
+                    <a href="#" style="margin-right: 10px;"><img src="{% static 'images/discord.png' %}" alt="Discord" style="width: 24px;"></a>
+                    <a href="#" style="margin-right: 10px;"><img src="{% static 'images/youtube.png' %}" alt="YouTube" style="width: 24px;"></a>
+                    <a href="#"><img src="{% static 'images/twitter.png' %}g" alt="Twitter" style="width: 24px;"></a>
+                </div>
+            </div>
+    
+            <div>
+                <h4 style="font-weight: bold;">COMPANY</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="#" style="color: white; text-decoration: none;">About Us</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Support</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Privacy Policy</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Terms and Condition</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Pricing and Refund</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Hire From Us</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Bug Bounty</a></li>
+                </ul>
+            </div>
+    
+            <div>
+                <h4 style="font-weight: bold;">COMMUNITY</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="#" style="color: white; text-decoration: none;">Inertia</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Discord</a></li>
+                </ul>
+            </div>
+    
+            <div>
+                <h4 style="font-weight: bold;">Get In Touch</h4>
+                <p style="margin: 0;">+91 8109161752</p>
+                <p style="margin: 0;">+91 9691778470</p>
+                <p style="margin: 0;"><a href="mailto:hello@sheryians.com" style="color: white; text-decoration: none;">hello@sheryians.com</a></p>
+                <p style="margin: 0;">23-B, Indrapuri Sector C,<br>Bhopal(MP), 462021</p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 20px; border-top: 1px solid gray; padding-top: 10px;">
+            <p style="margin: 0; font-size: 14px;">Copyright © 2024 Sheryians Pvt. Ltd.<br>All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
